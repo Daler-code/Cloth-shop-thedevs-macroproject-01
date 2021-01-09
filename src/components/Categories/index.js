@@ -2,42 +2,37 @@ import React from 'react';
 
 import './styles.css';
 
+import data from '../../mock/categories';
 
 const Categories = () => {
+
   return (
     <div className="categories-container">
       <div className="categories-row">
-          <div className="category-item-above">
-            <div className="item-label">
-              <h1 className="item-name">Hats</h1>
-              <h2 className="item-text">Shop Now</h2>
+        {
+          data.slice(0, 3)
+          .map(({id, name}) => (
+            <div key={id} className="category-item-above">
+              <div className="item-label">
+                <h1 className="item-name">{name}</h1>
+                <h2 className="item-text">Shop Now</h2>
+              </div>
             </div>
-          </div>
-          <div className="category-item-above">
-            <div className="item-label">
-              <h1 className="item-name">Hats</h1>
-              <h2 className="item-text">Shop Now</h2>
-            </div>
-          </div><div className="category-item-above">
-            <div className="item-label">
-              <h1 className="item-name">Hats</h1>
-              <h2 className="item-text">Shop Now</h2>
-            </div>
-          </div>
+          ))
+        }
       </div>
       <div className="categories-row">
-        <div className="category-item">
-          <div className="item-label">
-              <h1 className="item-name">Hats</h1>
-              <h2 className="item-text">Shop Now</h2>
+        {
+          data.slice(3, 5)
+          .map(({id, name}) => (
+            <div key={id} className="category-item">
+              <div className="item-label">
+                <h1 className="item-name">{name}</h1>
+                <h2 className="item-text">Shop Now</h2>
+              </div>
             </div>
-          </div>
-          <div className="category-item">
-            <div className="item-label">
-              <h1 className="item-name">Hats</h1>
-              <h2 className="item-text">Shop Now</h2>
-            </div>
-          </div>
+          ))
+        }
       </div>
     </div>
   )
