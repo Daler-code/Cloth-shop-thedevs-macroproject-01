@@ -4,8 +4,9 @@ import './styles.css';
 
 import Navbar from '../../components/Navbar'
 
-
+// functional component
 const ShopPage = () => {
+  
   return (
     <div>
       <Navbar />
