@@ -5,7 +5,7 @@ import './styles.css';
 
 const Buttons = () => {
   return (
-    <div className="button-primary"></div>
+    <button className="button-primary">Go to checkout</button>
   )
 }
 

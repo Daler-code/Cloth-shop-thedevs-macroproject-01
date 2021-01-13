@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.css';
@@ -7,9 +7,9 @@ import IconBag from '../../assets/icons/shopping-bag.png';
 import Logo from '../../assets/icons/crown.png';
 import CartPopup from '../../components/CartPopup';
 
-// state es6 js
-class Navbar extends React.Component {
-  // logic part of comp
+
+// Class Component
+class Navbar extends Component {
   constructor () {
     super()
     this.state = {
@@ -18,14 +18,15 @@ class Navbar extends React.Component {
 
     this.handleClick = this.handleClick.bind(this)
   }
+  
 
   // handles click
   handleClick () {
-    this.setState({show: true})
+    const showState = this.state.show;
+    this.setState({show: !showState})
   }
 
   render () {
-    // our presentational part
     return (
       <div className="navbar-container">
         <div className="logo-container">
