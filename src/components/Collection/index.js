@@ -2,9 +2,9 @@ import React from 'react';
 
 import './styles.css';
 
-import data from '../../mock/categories';
+import data from '../../mock/collection';
 
-const Categories = () => {
+const Collection = () => {
 
   return (
     <div className="categories-container">
@@ -25,8 +25,9 @@ const Categories = () => {
       <div className="categories-row">
         {
           data.slice(3, 5)
-          .map(({id, name}) => (
+          .map(({id, name, image}) => (
             <div key={id} className="category-item">
+              <img src={image} alt="..." />
               <div className="item-label">
                 <h1 className="item-name">{name}</h1>
                 <h2 className="item-text">Shop Now</h2>
@@ -39,4 +40,4 @@ const Categories = () => {
   )
 };
 
-export default Categories;
+export default Collection;

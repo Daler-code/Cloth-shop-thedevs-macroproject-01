@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Navbar from '../../components/Navbar';
-import Categories from '../../components/Categories';
+import Collection from '../../components/Collection';
 
 const HomePage = () => {
   return (
     <div>
       <Navbar />
-      <Categories />
+      <Collection />
     </div>
   )
 }

@@ -2,25 +2,22 @@ import React from 'react';
 
 import './styles.css';
 
-import ShopItem from '../../components/ShopItem';
+import CollectionItem from '../CollectionItem'
 
-
-const CollectionPreview = ({title, items}) => {
-
+const CollectionPreview = ({ items, title }) => {
+  console.log(title, 'its title')
   return (
-    <>
-      <div>
-        <h1>{title}</h1>
-      </div>
-      <div className="collection-preview-container">
+    <div>
+      <h1>{title}</h1>
+      <div className="collection-preview">
         {
           items.filter((item, idx) => idx < 4)
-          .map((item) => (
-            <ShopItem key={item.id} item={item} />
+          .map(({id, ...otherProps}) => (
+            <CollectionItem key={id} {...otherProps} />
           ))
         }
       </div>
-    </>
+    </div>
   )
 }
 

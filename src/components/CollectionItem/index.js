@@ -3,14 +3,12 @@ import React from 'react';
 import './styles.css';
 
 
-const ShopItem = ({ item }) => {
-
-  const {image, price, name} = item;
+const CollectionItem = ({name, price, img }) => {
 
   return (
     <div className="shop-item">
       <div className="shop-item-container" >
-        <img src={image} alt="..." />
+        <img src={img} alt="..." />
       </div>
       <div className="shop-item-footer">
         <h1>{name}</h1>
@@ -20,4 +18,4 @@ const ShopItem = ({ item }) => {
   )
 }
 
-export default ShopItem;
+export default CollectionItem;

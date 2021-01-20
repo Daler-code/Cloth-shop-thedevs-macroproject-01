@@ -1,17 +1,19 @@
 import React from 'react';
 
-import collection from '../../mock/shop';
-import CollectionPreview from '../CollectionPreview';
+import './styles.css';
+
+import collection from '../../mock/collection'
+
+import CollectionPreview from '../CollectionPreview'
+
 
 const CollectionOverview = () => {
 
-  console.log(collection, 'collection')
-  
   return (
-    <div className="collection-overview-container">
+    <div className="collection-overview">
       {
-        collection.map(({id, items, ...otherProps}) => (
-          <CollectionPreview key={id} {...otherProps} items={items}  />
+        collection.map(({id, title, ...otherProps}) => (
+          <CollectionPreview key={id} title={title} {...otherProps} />
         ))
       }
     </div>

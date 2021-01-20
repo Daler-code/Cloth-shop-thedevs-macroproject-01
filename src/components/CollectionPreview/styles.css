@@ -1,7 +1,10 @@
-.collection-preview-container {
+.collection-preview {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  border: 2px solid red;
+  margin-bottom: 40px;
 }
