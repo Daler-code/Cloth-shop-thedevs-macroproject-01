@@ -11,8 +11,9 @@ const Categories = () => {
       <div className="categories-row">
         {
           data.slice(0, 3)
-          .map(({id, name}) => (
+          .map(({id, name, image}) => (
             <div key={id} className="category-item-above">
+              <img src={image} alt="..." />
               <div className="item-label">
                 <h1 className="item-name">{name}</h1>
                 <h2 className="item-text">Shop Now</h2>

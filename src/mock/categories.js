@@ -3,26 +3,26 @@ export default [
   {
     id: 1,
     name: 'Hats',
-    image: ''
+    image: 'https://hosty.xxx/i/c524f277dcfd97410b4c0bbca77ef1b35d029360.jpg'
   },
   {
     id: 2,
     name: 'Jackets',
-    image: ''
+    image: 'https://hosty.xxx/i/c524f277dcfd97410b4c0bbca77ef1b35d029360.jpg'
   },
   {
     id: 3,
     name: 'Sneakers',
-    image: ''
+    image: 'https://hosty.xxx/i/c524f277dcfd97410b4c0bbca77ef1b35d029360.jpg'
   },
   {
     id: 4,
     name: 'Wemens',
-    image: ''
+    image: 'https://hosty.xxx/i/c524f277dcfd97410b4c0bbca77ef1b35d029360.jpg'
   },
   {
     id: 5,
     name: 'Mens',
-    image: ''
+    image: 'https://hosty.xxx/i/c524f277dcfd97410b4c0bbca77ef1b35d029360.jpg'
   }
 ];

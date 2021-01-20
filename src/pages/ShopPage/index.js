@@ -2,15 +2,17 @@ import React from 'react';
 
 import './styles.css';
 
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Navbar';
+import CollectionOverview from '../../components/CollectionOverview';
 
-// functional component
-const ShopPage = () => {
+import data from '../../mock/shop';
+
+const ShopPage = () => { // parent component
   
   return (
-    <div>
+    <div className="shop-page-container">
       <Navbar />
-      <h1>Its a shop page</h1>
+      <CollectionOverview />
     </div>
   )
 };
